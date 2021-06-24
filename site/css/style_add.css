@@ -1,0 +1,72 @@
+.form {
+    padding-top: 2%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5vh;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 3.5%;
+}
+
+.form div {
+    margin-bottom: 4%;
+}
+
+.form input,
+textarea,
+.button {
+    font-size: 2.5vh;
+    width: 24vw;
+    background-color: #4F6573;
+    border: 0;
+    border-radius: 30px;
+    padding: 2%;
+    text-indent: 2%;
+    margin-left: 2%;
+    color: white;
+    text-align: center;
+}
+
+.form input:focus,
+textarea:focus,
+.button {
+    outline: 0;
+}
+
+.form textarea {
+    font-size: 2vh;
+    height: 15vh;
+}
+
+.form #submit,
+.button {
+    text-indent: 0;
+}
+
+#submit:hover,
+.button {
+    cursor: pointer;
+}
+
+#service h2 {
+    padding-top: 2%;
+    text-align: center;
+    font-size: 5vh;
+}
+
+@media(orientation:portrait) {
+
+    .form {
+        font-size: 4vh;
+        width: 80%;
+    }
+
+    .form input,
+    textarea,
+    .button {
+        font-size: 3vh;
+        width: 60vw;
+        border-radius: 20px;
+    }
+}

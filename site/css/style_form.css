@@ -1,0 +1,109 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #D8E6F2;
+}
+
+h2 {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    font-size: 6vh;
+    text-align: center;
+}
+
+#wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 50%;
+    border-radius: 60px;
+    background-color: #7C92A6;
+    overflow: auto;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5vh;
+    width: 50%;
+    text-align: center;
+}
+
+.form td input,
+textarea {
+    font-size: 2.5vh;
+    width: 24vw;
+    background-color: #4F6573;
+    border: 0;
+    border-radius: 30px;
+    padding: 2%;
+    text-indent: 2%;
+    margin-left: 2%;
+    color: white;
+}
+
+.form td input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+.form td textarea {
+    font-size: 2vh;
+    height: 15vh;
+}
+
+.form #submit {
+    text-indent: 0;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#home {
+    display: block;
+    width: 72px;
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+}
+
+@media(orientation:portrait) {
+
+
+    #wrapper {
+        width: 80%;
+    }
+
+    .form {
+        font-size: 2.6vh;
+    }
+
+    .form td input,
+    textarea {
+        font-size: 2vh;
+        width: 37vw;
+        border-radius: 20px;
+    }
+}
+
+@media(orientation:portrait) and (max-width:700px) {
+    h2 {
+        width: 100%;
+        font-size: 4.5vh;
+        top: 4%;
+    }
+}
